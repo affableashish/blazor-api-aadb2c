@@ -1,6 +1,8 @@
 ﻿@page "/fetchdata"
+@attribute [Authorize]
 @using BlazorServerClient.Data
-@inject WeatherForecastService ForecastService
+
+@inject WeatherForecastService WeatherForecastService
 
 <PageTitle>Weather forecast</PageTitle>
 
@@ -44,7 +46,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await ForecastService.GetForecastAsync(DateOnly.FromDateTime(DateTime.Now));
+        forecasts = (await WeatherForecastService.GetForecastAsync())?.ToArray();
     }
-
 }

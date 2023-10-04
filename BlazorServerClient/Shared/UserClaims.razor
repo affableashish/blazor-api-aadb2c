@@ -1,0 +1,63 @@
+﻿@using System.Security.Claims
+
+<h5>@_authMessage</h5>
+
+<AuthorizeView>
+    Claims from the ID token
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Claim Type</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var claim in _claims)
+        {
+            <tr>
+                <td>@claim.Type</td>
+                <td>@claim.Value</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</AuthorizeView>
+
+@code {
+    // AuthenticationStateProvider service provides the current user's ClaimsPrincipal data.
+    [Inject]
+    private AuthenticationStateProvider AuthenticationStateProvider { get; set; } = null!;
+
+    string? _authMessage;
+    IEnumerable<Claim> _claims = Enumerable.Empty<Claim>();
+    
+    // Defines list of claim types that will be displayed after successful sign-in.
+    string[] _printClaims = { "name", "jobTitle", "city" };
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetClaimsPrincipalData();
+    }
+    
+    private async Task GetClaimsPrincipalData()
+    {
+        // Gets an AuthenticationState that describes the current user.
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+
+        var user = authState.User;
+
+        // Checks if the user has been authenticated.
+        if (user.Identity.IsAuthenticated)
+        {
+            _authMessage = $"{user.Identity.Name} is authenticated.";
+
+            // Sets the claims value in _claims variable.
+            // The claims mentioned in printClaims variable are selected only.
+            _claims = user.Claims.Where(x => _printClaims.Contains(x.Type));
+        }
+        else
+        {
+            _authMessage = "The user is NOT authenticated.";
+        }
+    }
+}
