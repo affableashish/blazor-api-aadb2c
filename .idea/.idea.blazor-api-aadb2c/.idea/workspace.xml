@@ -8,23 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c34c2a4-7dcf-42c7-be8c-c775824a9e16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.blazor-api-aadb2c/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.blazor-api-aadb2c/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="8c34c2a4-7dcf-42c7-be8c-c775824a9e16" name="Changes" comment="Adds more information to README.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696351006566</updated>
-      <workItem from="1696351007781" duration="39615000" />
+      <workItem from="1696351007781" duration="39845000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -157,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696455963962</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adds more information to README.md">
+      <option name="closed" value="true" />
+      <created>1696646880195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696646880195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +160,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Finally makes calling the protected API work with Access Token provided by Azure AD B2C" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally makes calling the protected API work with Access Token provided by Azure AD B2C" />
+    <MESSAGE value="Adds more information to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds more information to README.md" />
   </component>
 </project>
