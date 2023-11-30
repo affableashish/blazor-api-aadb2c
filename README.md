@@ -78,23 +78,22 @@ Use command line or Rider or Visual Studio for this.
 ![img.png](docs/_media/img.png)
 
 ### Setup the API project to use Azure AD B2C
-1. Add required packages
-`Microsoft.Identity.Web`
-`Microsoft.AspNetCore.Authentication.OpenIdConnect`
-`Microsoft.AspNetCore.Authentication.JwtBearer`
-2. [Reference](https://jamescook.dev/azure-b2c-getting-started).
+Add required packages
+```
+Microsoft.Identity.Web
+```
+[Reference](https://jamescook.dev/azure-b2c-getting-started).
 
 ### Setup the Web App project to use Azure AD B2C
-1. Add required packages
-   `Microsoft.Identity.Web`
-   `Microsoft.Identity.Web.UI`
-   `Microsoft.Identity.Web.DownstreamApi`
-   `Microsoft.AspNetCore.Authentication.OpenIdConnect`
-   `Microsoft.AspNetCore.Authentication.JwtBearer`
-`Microsoft.Identity.Web` sets up the authentication pipeline with cookie based auth.
-Takes care of sending and receiving HTTP authentication messages, token validation, claims extraction and more.
+Add required packages
+```
+Microsoft.Identity.Web
+Microsoft.Identity.Web.UI
+Microsoft.Identity.Web.DownstreamApi
+```
+The Microsoft Identity Web library sets up the authentication pipeline with cookie-based authentication. It takes care of sending and receiving HTTP authentication messages, token validation, claims extraction, and more.
 
-2. [Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-application?tabs=visual-studio).
+[Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-application?tabs=visual-studio).
 
 ### Jump into the code to see how the client calls the protected API 🎉
 [Reference](https://learn.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-app-configuration?tabs=aspnetcore)
