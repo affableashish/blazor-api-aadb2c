@@ -82,7 +82,7 @@ Add required packages
 ```
 Microsoft.Identity.Web
 ```
-[Reference](https://jamescook.dev/azure-b2c-getting-started).
+[Reference](https://jamescook.dev/azure-b2c-getting-started)
 
 ### Setup the Web App project to use Azure AD B2C
 Add required packages
@@ -93,7 +93,7 @@ Microsoft.Identity.Web.DownstreamApi
 ```
 The Microsoft Identity Web library sets up the authentication pipeline with cookie-based authentication. It takes care of sending and receiving HTTP authentication messages, token validation, claims extraction, and more.
 
-[Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-application?tabs=visual-studio).
+[Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-application?tabs=visual-studio)
 
 ### Jump into the code to see how the client calls the protected API 🎉
 [Reference](https://learn.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-app-configuration?tabs=aspnetcore)
