@@ -8,7 +8,6 @@ In this example, I'm using Azure AD B2C in place of Auth0 (shown in the diagram 
 
 <img width="600" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/4c73a744-2fe6-4662-850b-4dd18b5b2ebc">
 
-
 In this flow we get ID token and Access token from the authorization server. We use Access Token to call the protected API.
 Also helpful to know is the difference between ID token and Access token. Read all about it [here](https://auth0.com/blog/id-token-access-token-what-is-the-difference/).
 
@@ -35,11 +34,11 @@ Go to Subscription -> Resource Providers
 Select the row -> Register
 
 <img width="300" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/46614e39-6b26-4837-866b-626faa0be370">
-
+<br>
 <img width="650" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/66377321-2770-4561-a117-5fd8dcacf05a">
 
 ### Create Tenant
-Create a new Azure AD B2C tenant in your subscription (if you don't already have one).
+Create a new Azure AD B2C tenant in your subscription (if you don't already have one).  
 Before my app can interact with Azure AD B2C, it must be registered in a tenant that I manage.
 
 Create an Azure AD B2C tenant. Instructions [here](https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant?WT.mc_id=Portal-Microsoft_AAD_B2CAdmin).
@@ -58,11 +57,11 @@ Add this new directory that you just created to favorites by searching for Azure
 
 Now it'll show up like this:
 
-<img width="250" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/b6853eae-c0cd-474b-9254-bbbc25ccadbf">
+<img width="225" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/b6853eae-c0cd-474b-9254-bbbc25ccadbf">
 
 Now, switch to your directory:
 
-<img width="750" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/0701cfd1-059c-4e1b-ace1-89fc8125fddb">
+<img width="800" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/0701cfd1-059c-4e1b-ace1-89fc8125fddb">
 
 ## Register Web App in Azure AD B2C
 ### Register web app
@@ -70,7 +69,7 @@ Follow instructions [here](https://learn.microsoft.com/en-us/azure/active-direct
 
 Fill up the form
 
-<img width="650" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/00994aea-e863-4012-908b-c5b43364744a">
+<img width="600" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/00994aea-e863-4012-908b-c5b43364744a">
 
 Add one more Redirect Uri using info from `launchSettings.json`
 
@@ -91,7 +90,7 @@ App Registrations page -> Munson Web -> Certificates and secrets -> New Client S
 
 Record value: fA58Q~6MzNJ3yk.YTq9iP51R1niJFWuxaGxTIcub
 
-### Enable ID tokens and access tokens
+### Enable Id tokens and Access tokens
 If we register this app and configure it with jwt.ms for testing a user flow or custom policy, we need to enable implicit grant flow in the app registration.
 
 Authentication -> Select both options -> Save
@@ -117,7 +116,7 @@ Name: B2C_1_ ----> SignUpSignIn
 #### Test it
 Open the user flow you just created -> Run user flow
 
-<img width="400" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/e886816e-f76e-4f46-b011-c9ccbb7efd4b">
+<img width="375" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/e886816e-f76e-4f46-b011-c9ccbb7efd4b">
 
 I run the flow now and get this ID token back
 
@@ -138,7 +137,7 @@ Create a user flow -> Profile editing -> Recommended -> Create
 #### Test this flow
 Login using the credentials you used earlier -> You'll see a page to update your display name and job title.
 
-<img width="350" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/91d3e0cb-68b0-4d09-8537-4130b5ef623c">
+<img width="300" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/91d3e0cb-68b0-4d09-8537-4130b5ef623c">
 
 You'll get back the token:
 
@@ -164,9 +163,8 @@ Expose an API -> Application ID URI -> Add -> Change the GUID to more human read
 Add Scopes: read and write
 
 <img width="350" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/0a86ed52-2701-43b3-a88b-59f3eee551f7">
-
-**Note:**
-
+<br>
+**Note:**  
 Scopes enable a mechanism to define what an application can do on behalf of the user.  
 Scopes are permissions of a resource (scopes are exposed in API so API is the resource here) that the application wants to exercise on behalf of the user. These permissions are in Web app.
 
@@ -177,7 +175,7 @@ App Registrations -> Munson Web -> API Permissions -> Add a permission
 -> Munson API (This is the API to which the web app should be granted access)
 -> Select Permissions: read and write
 -> Add permissions
-<img width="850" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/f1e636bd-ec9a-4904-8a2a-26ccba62d78c">
+<img width="900" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/f1e636bd-ec9a-4904-8a2a-26ccba62d78c">
 
 -> Grant admin consent for Munson Pickles (Munson Pickles is my Tenant/ Directory name)
 
@@ -186,23 +184,22 @@ Now it should look like this (web app now has permissions to call Microsoft Grap
 <img width="850" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/64286de7-62c0-43b6-9343-0f7a83d9364e">
 
 Copy the scope names:  
-https://munsonpickles3.onmicrosoft.com/munson-api/read
+https://munsonpickles3.onmicrosoft.com/munson-api/read  
 https://munsonpickles3.onmicrosoft.com/munson-api/write
 
-**Note:**
-
+**Note:**  
 On the resource side, user's privileges must be checked even in the presence of granted scopes.
 
 <img width="850" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/0029c399-1950-4d12-8141-7250ea0233d4">
 
-Whenever the client Blazor Server app calls the API, the logged in user will grant "read" access to the Blazor Server app which will present that scope to the backend API which is protected by a policy that requires "read" scope.
+Whenever the client Blazor Server app calls the API, the logged in user will grant "read" access to the Blazor Server app which will present that scope to the backend API which is protected by a policy that requires "read" scope. In this case the consent screen will not appear to the user because these scopes are only consented by the admin and we did that consent already with this: _-> Grant admin consent for Munson Pickles_. 
 
 ## Setup the API project to use Azure AD B2C
 [Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-api?tabs=csharpclient)
 
 ### Setup appsettings.json
-Azure Ad B2C Instance Name [Hint](https://jamescook.dev/azure-b2c-getting-started):  
-The first part of your Azure B2C tenant domain name combined with b2clogin.com. It should look like mydomain.b2clogin.com.
+Azure Ad B2C Instance Name [Hint](https://jamescook.dev/azure-b2c-getting-started): 
+The first part of your Azure B2C tenant domain name combined with `b2clogin.com`. It should look like `mydomain.b2clogin.com`.
 
 <img width="450" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/05c9d507-f1c9-41ec-8829-63d40fe5c77f">
 
@@ -222,7 +219,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
 ```
 
-Set it up with steps outlined in the referenced page above. 
+Set it up with steps outlined in the referenced page above. Even better, just take a look at the code.
 
 ## Setup the Web App project to use Azure AD B2C
 [Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-application?tabs=visual-studio)
@@ -232,7 +229,7 @@ Create a Blazor web app with No auth
 <img width="500" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/df58dc85-c123-4488-9f66-df4e84a1305d">
 
 ### Setup appsettings.json
-<img width="550" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/7808c930-70b4-4362-ba5c-500040055a08">
+<img width="500" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/7808c930-70b4-4362-ba5c-500040055a08">
 
 ### Add required packages
 ```
@@ -242,17 +239,33 @@ Microsoft.Identity.Web.DownstreamApi
 ```
 The Microsoft Identity Web library sets up the authentication pipeline with cookie-based authentication. It takes care of sending and receiving HTTP authentication messages, token validation, claims extraction, and more.
 
-Set it up with steps outlined in the referenced page above. 
+Set it up with steps outlined in the referenced page above. Even better, just take a look at the code.
 
 ### Wrap your Router in App.razor with CascadingAuthenticationState
-<img width="450" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/ea46f6b7-a577-42ef-8370-64c42060ba98">
+Also replace `RouteView` with `AuthorizeRouteView`.
 
+```razor
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
+            <FocusOnNavigate RouteData="@routeData" Selector="h1"/>
+        </Found>
+        <NotFound>
+            <PageTitle>Not found</PageTitle>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p role="alert">Sorry, there's nothing at this address.</p>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>
+```
 ### Add LoginDisplay
 Add a `LoginDisplay.razor` component in Shared folder and use that in `MainLayout.razor`.
 
 <img width="300" alt="image" src="https://github.com/affableashish/blazor-api-aadb2c/assets/30603497/6276be99-13c4-4ffe-8a0f-6ee2d2364647">
 
-## Jump into the code to see it all in action 🤓
+## Look at the code to see it all in action 🤓
 Jump into the code to see how the client calls the protected API. 
 
 [Reference](https://learn.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-app-configuration?tabs=aspnetcore)
