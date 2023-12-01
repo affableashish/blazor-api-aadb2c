@@ -219,7 +219,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
 ```
 
-Set it up with steps outlined in the referenced page above. Even better, just take a look at the code.
+Set it up with steps outlined in the referenced page above. **👉Even better, just take a look at the code.👈**
 
 ## Setup the Web App project to use Azure AD B2C
 [Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-application?tabs=visual-studio)
@@ -239,7 +239,7 @@ Microsoft.Identity.Web.DownstreamApi
 ```
 The Microsoft Identity Web library sets up the authentication pipeline with cookie-based authentication. It takes care of sending and receiving HTTP authentication messages, token validation, claims extraction, and more.
 
-Set it up with steps outlined in the referenced page above. Even better, just take a look at the code.
+Set it up with steps outlined in the referenced page above. **👉Even better, just take a look at the code.👈**
 
 ### Wrap your Router in App.razor with CascadingAuthenticationState
 Also replace `RouteView` with `AuthorizeRouteView`.
