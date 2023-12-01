@@ -194,8 +194,8 @@ On the resource side, user's privileges must be checked even in the presence of 
 
 Whenever the client Blazor Server app calls the API, the logged in user will grant "read" access to the Blazor Server app which will present that scope to the backend API which is protected by a policy that requires "read" scope. In this case the consent screen will not appear to the user because these scopes are only consented by the admin and we did that consent already with this: _-> Grant admin consent for Munson Pickles_. 
 
-## Setup the API project to use Azure AD B2C
-[Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-api?tabs=csharpclient)
+## Setup the API project to use Azure AD B2C. [Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-api?tabs=csharpclient)
+**👉Don't bother with below steps. Just take a look at the code.👈**
 
 ### Setup appsettings.json
 Azure Ad B2C Instance Name [Hint](https://jamescook.dev/azure-b2c-getting-started): 
@@ -219,10 +219,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
 ```
 
-Set it up with steps outlined in the referenced page above. **👉Even better, just take a look at the code.👈**
+Set it up with steps outlined in the referenced page above.
 
-## Setup the Web App project to use Azure AD B2C
-[Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-application?tabs=visual-studio)
+## Setup the Web App project to use Azure AD B2C. [Reference](https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-application?tabs=visual-studio)
+**👉Don't bother with below steps. Just take a look at the code.👈**
 
 Create a Blazor web app with No auth
 
@@ -239,7 +239,7 @@ Microsoft.Identity.Web.DownstreamApi
 ```
 The Microsoft Identity Web library sets up the authentication pipeline with cookie-based authentication. It takes care of sending and receiving HTTP authentication messages, token validation, claims extraction, and more.
 
-Set it up with steps outlined in the referenced page above. **👉Even better, just take a look at the code.👈**
+Set it up with steps outlined in the referenced page above.
 
 ### Wrap your Router in App.razor with CascadingAuthenticationState
 Also replace `RouteView` with `AuthorizeRouteView`.
