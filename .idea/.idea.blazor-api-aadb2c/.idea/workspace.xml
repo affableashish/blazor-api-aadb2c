@@ -8,7 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c34c2a4-7dcf-42c7-be8c-c775824a9e16" name="Changes" comment="Adds more information to README.md" />
+    <list default="true" id="8c34c2a4-7dcf-42c7-be8c-c775824a9e16" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.blazor-api-aadb2c/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.blazor-api-aadb2c/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorServerClient/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorServerClient/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,30 +22,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57dd48faace948fa9da94a6d71a57422255d8/c7/ebcaf94d/MicrosoftIdentityWebAppAuthenticationBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57dd48faace948fa9da94a6d71a57422255d8/f0/06f2cd6a/MicrosoftIdentityWebAppAuthenticationBuilderWithCo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/57dd48faace948fa9da94a6d71a57422255d8/f3/93ee50f2/AuthorizeForScopesAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b7e06d894d94c3cb908bacfca6ca76ee448/79/078ba29d/DownstreamApiExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9b7e06d894d94c3cb908bacfca6ca76ee448/d6/d6579b0e/DownstreamApi.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ce8ff50b04d54891bb4caeaeabb4aa581f7c8/a9/01013304/DefaultAuthorizationHeaderProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da00d865df564904aa7054ad20e11c369020/46/68b28529/IDownstreamApi.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da00d865df564904aa7054ad20e11c369020/49/42c9f791/DownstreamApiOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da00d865df564904aa7054ad20e11c369020/6a/402b503b/IAuthorizationHeaderProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da00d865df564904aa7054ad20e11c369020/c5/f710ad75/AuthorizationHeaderProviderOptions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/11baeab4e48253fe3d264df7f48e9c91ab91c176871189cbfb7c01a9effa719/Constants.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/237c56b1f2fec0f41493f499471736cf26a7f5baec3091926f797881d5f9/DenyAnonymousAuthorizationRequirement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2b6bb8887d4aea53b937652ccb29612a5933d1381a9b596758341b69dc2c3/HttpRequest.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2f9d5ccc69ae9ca73d362ee184e34554b3f38aab60264f1b74c9904e764c9/DownstreamApiExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/32436f8b54cd53cf87316d28965782d251a36362d03e6cb2ba4d227ef87610/IAuthorizationHeaderProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3a85d56594016f7bc9d3614751887fe2fe46b229bead1567ef53748ebbb919/AuthorizationPolicyBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6809be8c4fc755da3bd393cf7c32b1449acc79f19f1c273f878f13bfbac6a/AuthorizeForScopesAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8555752cbfa97385daafc362b3af90a8cc62aa9ecc7e76548bfbce48df979af1/MicrosoftIdentityConsentAndConditionalAccessHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a7d079cdbfc06e921c4d8ab124b11aaa54632e5564af0e8f231963c3c989b96/AuthorizeView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b01dff78d836d6c7d588e664fc17fa41f2469eb55e81e474db5d1ad4aa3e7/AuthorizationOptions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Data/WeatherForecast.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Data/WeatherForecastService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Pages/Counter.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Pages/FetchData.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Pages/Index.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Shared/LoginDisplay.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Shared/LoginDisplay.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/Shared/NavMenu.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/BlazorServerClient/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/ashishkhanal/RiderProjects/blazor-api-aadb2c/ProtectedWebAPI/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce81142d2a95cc4249d4ba5c1cc26198875eaecd965ff8bbbd24dc882a734d2/ExceptionFilterAttribute.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2WGFS6LsEET2olpFT5ndLRk4d3n" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -67,8 +75,8 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "/Users/ashishkhanal/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/ashishkhanal/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/ashishkhanal/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
+      "/Users/ashishkhanal/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
       "/Users/ashishkhanal/.local/share/Symbols/src"
     ]
   }
@@ -123,7 +131,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696351006566</updated>
-      <workItem from="1696351007781" duration="39845000" />
+      <workItem from="1696351007781" duration="42833000" />
+      <workItem from="1697493103396" duration="1948000" />
+      <workItem from="1697603744117" duration="6518000" />
+      <workItem from="1701388796576" duration="3547000" />
+      <workItem from="1702320269719" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -149,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696646880195</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Move image files from root level into docs/_media folder">
+      <option name="closed" value="true" />
+      <created>1696647874161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696647874161</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +181,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Finally makes calling the protected API work with Access Token provided by Azure AD B2C" />
     <MESSAGE value="Adds more information to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds more information to README.md" />
+    <MESSAGE value="Move image files from root level into docs/_media folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move image files from root level into docs/_media folder" />
   </component>
 </project>
